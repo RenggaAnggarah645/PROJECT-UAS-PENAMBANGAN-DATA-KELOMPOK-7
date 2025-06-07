@@ -119,9 +119,38 @@ Kekurangan Decision Tree:
 
 # Rencana Pengembangan
 1. Integrasi dengan sistem akademik untuk prediksi real-time
-2. Pengembangan dashboard visual untuk monitoring oleh fakultas
-3. Penambahan variabel baru seperti aktivitas ekstrakurikuler
-4. Implementasi model ensemble untuk meningkatkan akurasi
+
+   Integrasi sistem prediksi dengan sistem akademik yang ada (seperti SIAKAD atau LMS) akan memungkinkan akses real-time terhadap data mahasiswa. Hal ini mencakup:
+    + Automatisasi Input Data: Sistem akan terhubung langsung ke database akademik untuk mengambil data terbaru (IPK, kehadiran, remedial) secara berkala, mengurangi kesalahan manual dan memastikan prediksi selalu berdasarkan data terkini.
+    + Sinkronisasi dengan Sistem Monitoring: Hasil prediksi akan otomatis terkirim ke dosen wali atau departemen akademik melalui notifikasi atau laporan terintegrasi. Misalnya, jika seorang mahasiswa terdeteksi berisiko DO, sistem dapat mengirimkan alert ke pihak terkait.
+    + API untuk Interoperabilitas: Pengembangan API (Application Programming Interface) akan memfasilitasi pertukaran data antara sistem prediksi dan platform lain (e.g., sistem bimbingan akademik).
+  
+    Integrasi dengan sistem akademik merupakan langkah krusial untuk memastikan sistem prediksi dapat beroperasi secara efisien dan efektif. Dengan menghubungkan sistem ini ke SIAKAD atau LMS, data seperti IPK dan kehadiran akan diperbarui secara otomatis, menghilangkan kebutuhan input manual yang rentan error. Selain itu, integrasi memungkinkan tindakan cepat berdasarkan prediksi, seperti penjadwalan konseling atau penyesuaian beban SKS. API yang dikembangkan akan mendukung interoperabilitas dengan sistem lain, misalnya untuk mengirim rekomendasi intervensi ke sistem manajemen bimbingan akademik.
+2. Pengembangan Dashboard Visualisasi
+
+   Dashboard interaktif akan dirancang untuk memudahkan rektorat, fakultas, dan dosen memantau risiko DO secara visual. Fitur yang akan dikembangkan:
+   + Visualisasi Tren Risiko: Grafik garis atau heatmap untuk menunjukkan tren risiko DO per semester/prodi.
+   + Detail Mahasiswa Berisiko: Tabel yang memfilter mahasiswa berdasarkan tingkat risiko (rendah, sedang, tinggi) dengan informasi seperti alasan prediksi (contoh: IPK turun drastis, kehadiran rendah).
+   + Drill-Down Analysis: Kemampuan mengeksplorasi data spesifik, seperti membandingkan faktor risiko antarprodi atau tahun akademik.
+   + Ekspor Laporan: Opsi untuk menghasilkan laporan PDF/Excel berisi daftar mahasiswa berisiko beserta rekomendasi tindakan.
+  
+   Dashboard visualisasi akan menjadi antarmuka utama bagi pemangku kepentingan untuk memahami hasil prediksi. Dengan grafik interaktif, rektorat dapat mengidentifikasi pola risiko DO secara makro (misalnya, peningkatan risiko di prodi tertentu) dan mikro (kinerja individu mahasiswa). Fitur drill-down memungkinkan analisis mendalam, seperti melihat korelasi antara status pekerjaan dan risiko DO. Laporan yang dapat diekspor akan membantu fakultas merencanakan intervensi berbasis data, seperti program mentoring tambahan untuk mahasiswa dengan kehadiran rendah.
+   
+3. Peningkatan Model Prediksi
+   + Penambahan Fitur Baru: Memasukkan variabel baru seperti partisipasi dalam kegiatan kampus atau kesehatan mental (melalui kuesioner).
+   + Pemilihan Model yang Lebih Akurat: Eksperimen dengan algoritma lain (Random Forest, XGBoost) dan teknik tuning hyperparameter.
+   + Validasi Berkala: Evaluasi model setiap semester menggunakan data terbaru untuk memastikan keakuratan tetap tinggi.
+  
+   Model saat ini menggunakan Decision Tree dengan akurasi 94.25%, namun pengembangan ke depan akan fokus pada peningkatan cakupan prediksi. Dengan menambahkan variabel seperti keterlibatan dalam organisasi mahasiswa atau data kuesioner kesehatan mental, sistem dapat menangkap faktor risiko yang sebelumnya terlewat. Uji coba algoritma lain seperti XGBoost mungkin memberikan akurasi lebih tinggi untuk data tidak seimbang (minoritas kelas risiko tinggi). Validasi berkala akan menjaga relevansi model seiring perubahan perilaku mahasiswa.
+  
+4. Pengembangan Fitur Tambahan
+   + Sistem Early Warning: Notifikasi otomatis ke mahasiswa berisiko via email/sistem akademik, disertai saran tindakan.
+   + Modul Intervensi: Rekomendasi intervensi spesifik (contoh: konseling, pengurangan SKS) berdasarkan profil risiko.
+   + Feedback Loop: Mekanisme untuk dosen mencatat hasil intervensi, memperkaya data pelatihan model.
+  
+   Fitur early warning akan memicu kesadaran mandiri mahasiswa melalui pesan seperti, "Berdasarkan analisis, Anda berisiko DO karena IPK Semester 3 < 2.0. Disarankan konsultasi dengan dosen wali." Modul intervensi akan terintegrasi dengan kalender akademik, misalnya menyarankan pengurangan SKS untuk mahasiswa bekerja. Feedback loop dari dosen tentang efektivitas intervensi (misalnya, peningkatan IPK setelah konseling) akan digunakan untuk memperbaiki model.
+
+ **Rencana pengembangan ini bertujuan menciptakan sistem prediksi DO yang lebih proaktif dan terintegrasi. Dengan kombinasi teknologi data mining, visualisasi, dan kolaborasi antar-departemen, universitas dapat mengurangi angka DO secara signifikan.**
 
 # Conclusion 
 Berdasarkan hasil analisis dan implementasi model prediksi risiko drop out mahasiswa menggunakan algoritma Decision Tree, dapat disimpulkan bahwa sistem yang dikembangkan telah mencapai tingkat akurasi yang sangat baik sebesar 94.25%. Model ini mampu mengidentifikasi mahasiswa berisiko drop out dengan precision 87% dan recall 65%, menunjukkan kemampuan yang seimbang antara ketepatan prediksi dan cakupan identifikasi kasus. Faktor-faktor seperti IPK semester awal, tingkat kehadiran, dan jumlah mata kuliah yang diulang terbukti menjadi penentu utama dalam prediksi risiko drop out. Implementasi sistem ini memberikan solusi efektif bagi universitas untuk melakukan intervensi akademik secara dini dan tepat sasaran, sekaligus mengoptimalkan alokasi sumber daya untuk program retensi mahasiswa. Keberhasilan model ini membuka peluang pengembangan lebih lanjut, termasuk integrasi dengan sistem akademik yang ada, penambahan variabel prediktor yang lebih komprehensif, serta pengembangan dashboard visual untuk memudahkan monitoring oleh pihak fakultas dan rektorat. Dengan demikian, sistem prediksi ini tidak hanya memberikan solusi teknis yang akurat tetapi juga menjadi alat strategis dalam meningkatkan kualitas pendidikan dan mengurangi angka drop out di tingkat perguruan tinggi.
