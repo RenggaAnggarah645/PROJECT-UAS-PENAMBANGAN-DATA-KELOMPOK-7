@@ -1,5 +1,5 @@
 # PROJECT-UAS-PENAMBANGAN-DATA-KELOMPOK-7
-# Laporan Proyek Pengganti Uas Matakuliah Penambangan Data ( Data Mining) - Prediksi Risiko Drop Out Mahasiswa
+# Laporan Project Pengganti Uas Mata kuliah Penambangan Data ( Data Mining) - Prediksi Risiko Drop Out Mahasiswa
 # Dosen Pengampu
 1. Ir. Arie Vatresia, S.T., M.T.I., Ph.D
 # Anggota Kelompok 7 
