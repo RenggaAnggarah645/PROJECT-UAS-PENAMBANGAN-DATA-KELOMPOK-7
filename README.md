@@ -111,7 +111,7 @@ Kekurangan Decision Tree:
   + Kehadiran dan jumlah remedial juga berpengaruh signifikan
   + Faktor pekerjaan dan beban kerja muncul di cabang-cabang berikutnya
 
-4. sistem prediksi risiko dop out mahasiswa
+4. Gambar sistem prediksi risiko dop out mahasiswa
 
    ![sistem prediksi risiko dop out mahasiswa](https://github.com/user-attachments/assets/4bff7fb2-0a43-4986-b0ff-1330399ca38f)
 
