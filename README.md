@@ -117,6 +117,12 @@ Kekurangan Decision Tree:
 
    Gambar di atas menampilkan antarmuka Sistem Prediksi Risiko Drop Out (DO) Mahasiswa yang memungkinkan pengguna memasukkan data akademik dan non-akademik mahasiswa untuk diprediksi. Contoh input menunjukkan mahasiswa dengan IPK rendah (2.0-2.5), kehadiran buruk (30%), remedial tinggi (10), aktivitas online rendah (3 jam/minggu), bekerja (30 jam/minggu), pendapatan orang tua rendah (2 juta/bulan), dan tanggungan keluarga besar (4), sehingga sistem memprediksi "BERISIKO DROP OUT" dengan probabilitas 100%. Sistem juga memberikan rekomendasi perbaikan seperti konsultasi dengan DPA, meningkatkan kehadiran, mengurangi remedial, mengatur jadwal kerja-kuliah, dan mencari bantuan finansial. Antarmuka ini bersifat interaktif, memungkinkan pengujian data baru, dan dirancang untuk membantu identifikasi dini mahasiswa berisiko DO beserta solusi penanganannya.
 
+# Rencana Pengembangan
+1. Integrasi dengan sistem akademik untuk prediksi real-time
+2. Pengembangan dashboard visual untuk monitoring oleh fakultas
+3. Penambahan variabel baru seperti aktivitas ekstrakurikuler
+4. Implementasi model ensemble untuk meningkatkan akurasi
+
 # Conclusion 
 Berdasarkan hasil analisis dan implementasi model prediksi risiko drop out mahasiswa menggunakan algoritma Decision Tree, dapat disimpulkan bahwa sistem yang dikembangkan telah mencapai tingkat akurasi yang sangat baik sebesar 94.25%. Model ini mampu mengidentifikasi mahasiswa berisiko drop out dengan precision 87% dan recall 65%, menunjukkan kemampuan yang seimbang antara ketepatan prediksi dan cakupan identifikasi kasus. Faktor-faktor seperti IPK semester awal, tingkat kehadiran, dan jumlah mata kuliah yang diulang terbukti menjadi penentu utama dalam prediksi risiko drop out. Implementasi sistem ini memberikan solusi efektif bagi universitas untuk melakukan intervensi akademik secara dini dan tepat sasaran, sekaligus mengoptimalkan alokasi sumber daya untuk program retensi mahasiswa. Keberhasilan model ini membuka peluang pengembangan lebih lanjut, termasuk integrasi dengan sistem akademik yang ada, penambahan variabel prediktor yang lebih komprehensif, serta pengembangan dashboard visual untuk memudahkan monitoring oleh pihak fakultas dan rektorat. Dengan demikian, sistem prediksi ini tidak hanya memberikan solusi teknis yang akurat tetapi juga menjadi alat strategis dalam meningkatkan kualitas pendidikan dan mengurangi angka drop out di tingkat perguruan tinggi.
   
