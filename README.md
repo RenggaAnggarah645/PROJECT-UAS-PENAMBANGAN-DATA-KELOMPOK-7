@@ -117,7 +117,7 @@ Kekurangan Decision Tree:
 
    Gambar di atas menampilkan antarmuka Sistem Prediksi Risiko Drop Out (DO) Mahasiswa yang memungkinkan pengguna memasukkan data akademik dan non-akademik mahasiswa untuk diprediksi. Contoh input menunjukkan mahasiswa dengan IPK rendah (2.0-2.5), kehadiran buruk (30%), remedial tinggi (10), aktivitas online rendah (3 jam/minggu), bekerja (30 jam/minggu), pendapatan orang tua rendah (2 juta/bulan), dan tanggungan keluarga besar (4), sehingga sistem memprediksi "BERISIKO DROP OUT" dengan probabilitas 100%. Sistem juga memberikan rekomendasi perbaikan seperti konsultasi dengan DPA, meningkatkan kehadiran, mengurangi remedial, mengatur jadwal kerja-kuliah, dan mencari bantuan finansial. Antarmuka ini bersifat interaktif, memungkinkan pengujian data baru, dan dirancang untuk membantu identifikasi dini mahasiswa berisiko DO beserta solusi penanganannya.
 
-# Rencana Pengembangan
+# development plan
 1. Integrasi dengan sistem akademik untuk prediksi real-time
 
    Integrasi sistem prediksi dengan sistem akademik yang ada (seperti SIAKAD atau LMS) akan memungkinkan akses real-time terhadap data mahasiswa. Hal ini mencakup:
